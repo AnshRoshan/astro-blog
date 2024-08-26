@@ -1,0 +1,24 @@
+---
+import Social from './Social.astro'
+---
+
+<footer>
+    <Social platform="twitter" username="astrodotbuild" />
+    <Social platform="github" username="withastro" />
+    <Social platform="youtube" username="astrodotbuild" />
+</footer>
+<p>Made by @anshroshan !</p>
+
+<style>
+    footer {
+        padding: 2rem;
+        display: flex;
+    }
+
+    @media screen and (min-width: 636px) {
+        footer {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+</style>

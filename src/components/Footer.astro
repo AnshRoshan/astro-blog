@@ -2,36 +2,14 @@
 import Social from './Social.astro'
 ---
 
-<footer>
-  <div class='social-box'>
+<footer class='m-1 flex items-center justify-between bg-slate-400 p-4'>
+  <div class='flex flex-col items-center justify-center gap-4 md:flex-row'>
     <Social platform='twitter' username='astrodotbuild' />
     <Social platform='github' username='withastro' />
     <Social platform='youtube' username='astrodotbuild' />
   </div>
-  <p>Made by @anshroshan !</p>
+
+  <p class='font-semibold'>
+    Made by <span class='font-bold text-sky-600 underline underline-offset-2'>@ anshroshan</span>!
+  </p>
 </footer>
-
-<style>
-  footer {
-    background-color: #8561fa;
-    padding: 1rem;
-    margin-bottom: 1rem;
-  }
-  .social-box {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-    align-items: center;
-  }
-  p {
-    text-align: center;
-  }
-
-  @media screen and (min-width: 636px) {
-    .social-box {
-      display: flex;
-      flex-direction: row;
-    }
-  }
-</style>
